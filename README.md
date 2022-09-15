@@ -3,7 +3,7 @@
 This instruction will guide the users to use the circlncRNAnet in local mode. To set up a local run mode, the following three items are required:
 
 1. Linux environment.   
-2. R, v3.3.2 is recommended.  
+2. R, v3.3.2 is recommended. currently working on v4.1.1
 3. RStudio.  
  
 Then, follow the instructions below for installation and data analyses:
@@ -35,12 +35,13 @@ q("no")
 ### **2. Download the db files**  
 
 ```
-wget http://app.cgu.edu.tw/circlnc/db/db.zip # 1GB
-# or https://drive.google.com/file/d/1GZTwYKFbeyejiuGdzmt48hMxkDCeucX6/view?usp=sharing
-wget http://app.cgu.edu.tw/circlnc/tcga/tcga.zip # 1.6GB
-# or https://drive.google.com/file/d/17fEiOTrJb1L-9LrQG8pDxel5rh_Ep-ce/view?usp=sharing
-unzip db.zip  
-unzip tcga.zip  
+wget https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100378/db.tar.gz #1GB
+
+wget https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100378/tcga.tar.gz # 1.6GB
+
+tar -czf db.tar.gz
+tar -czf tcga.tar.gz 
+
 ```
   
 <br> 
